@@ -1,0 +1,234 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #4c4c4c;
+  font-size: 1.4rem;
+  font-family: 'Noto Sans Japanese', sans-serif,"游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  color: rgb(10, 15, 20);}
+
+a {
+  color: #14c0c9;
+  text-decoration: none; }
+  a:visited {
+    color: #0f949b; }
+  a:hover {
+    color: #0f949b; }
+  a:active {
+    color: #16d6e0; }
+
+
+.block-center, section .container,#service .desc {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.text-center {
+  text-align: center; }
+
+.emphasis {
+  font-weight: 700;
+  letter-spacing: 0.2em; }
+
+.box {
+  background-color: #fff;
+  color: rgba(10, 15, 20, 0.6);
+  background-image: url("../images/header.jpeg");
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.box .alpha div {
+  color: #000;
+  font-size: 8rem ;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+}
+
+#signin .box {
+  background-color: rgb(10, 15, 20);
+  height: 450px;
+  background-image: url("../images/footer.jpeg");
+}
+
+#signin .box div{
+  font-size: 1.8em ;
+  font-weight: 600;
+  color: #fff;
+  width: 90%;
+  text-align: center;
+}
+
+
+#signin .box div button{
+  margin-top: 50px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background-color: #fff;
+  border: #fff;
+  width:270px;
+  height:60px;
+  cursor: pointer;
+  font-size: 1.8rem ;
+  font-family: 'Noto Sans Japanese', sans-serif,"游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+}
+
+#signin .box div button:active{
+  background-color: rgba(10, 15, 20, 0.8);
+  color: #fff;
+  font-weight: 500;
+}
+
+section {
+  padding: 60px 0; }
+section .container {
+  width: 90%; 
+}
+section h2 {
+  font-size: 3.2rem; 
+}
+#signin {
+  padding:0px;
+}
+
+
+#service .container {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  -webkit-flex-direction: column;
+  flex-direction: column; 
+  margin-bottom: 50px;   
+}
+#service h2 {
+  margin-bottom: 40px; 
+  line-height: 1.3em;
+}
+#service .desc {
+  width: 90%;
+  margin-bottom: 60px;
+  line-height: 1;
+}
+
+#service .service-box {
+  padding: 0px;
+  border: 6px solid #efefef;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  margin: 20px 0;
+  }
+
+#service .box-title {
+font-size: 2.4rem;
+  font-weight: 800; 
+  height: 200px;
+  width: 100%;
+  color: #fff;
+  background-size: cover;
+  background-position: center center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#house {
+  background-image: url("../images/house.jpeg");
+}
+#furniture {
+  background-image: url("../images/furniture.jpg");
+}
+#car {
+  background-image: url("../images/car.jpg");
+}
+
+#service p {
+  margin: 20px 15px;
+}
+
+
+footer {
+  background-color: rgb(10, 15, 20);
+  padding: 20px 0;
+  text-align: center;
+  color: #FFF;
+  font-size: 0.8em; }
+
+
+
+
+@media (max-width: 768px) {
+.box {
+  height: 250px;
+  }
+.box .alpha div{
+  color: rgba(255, 255, 255, 1);
+  font-size: 5rem;
+  }
+.alpha{
+  width:100%;
+  height: 100%;
+  background-color: rgba(10, 15, 20, 0.4);
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  justify-content: center;
+ }
+}
+
+
+@media (min-width: 769px) {
+#signin .box div button:hover{
+  background-color: rgba(10, 15, 20, 0.8);
+  color: #fff;
+  font-weight: 500;
+}
+}
+
+@media (min-width: 1025px) {
+
+  a:hover {
+    text-decoration: underline; }
+
+  #service .container {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between; }
+  #service .service-box {
+    margin: 0 10px; 
+    width: 30%;}
+}
